@@ -39,11 +39,11 @@
     transform: translateX(0);
   }
 
-  .nav-open .btn-icon[name="open-nav"] {
+  .nav-open .btn-icon[id="open-nav"] {
     display: none;
   }
 
-  .nav-open .btn-icon[name="close-nav"] {
+  .nav-open .btn-icon[id="close-nav"] {
     display: block;
   }
 

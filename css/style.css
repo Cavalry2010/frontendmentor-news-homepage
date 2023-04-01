@@ -76,7 +76,7 @@ body {
   background-color: transparent;
 }
 
-.btn-icon[name="close-nav"] {
+.btn-icon[id="close-nav"] {
   display: none;
 }
 
