@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fffdfa;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.scroll-lock {
+  overflow-y: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 26, 0.5);
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.1s, opacity 0.1s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.nav-header {
+  max-width: 111rem;
+  margin: 0 auto;
+  margin-top: 8.6rem;
+  margin-bottom: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5d5f79;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #e9ab53;
+}
+
+.nav-mobile-btn {
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+}
+
+.btn-icon[name="close-nav"] {
+  display: none;
+}
+
+.container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 7rem;
+}
+
+.main-article {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: min-content;
+  row-gap: 3rem;
+  column-gap: 3.6rem;
+}
+
+.main-article-img {
+  grid-column: 1 / -1;
+  background-image: url("../assets/images/image-web-3-desktop.jpg");
+  background-size: cover;
+  padding-bottom: 41.1%;
+}
+
+.main-article-heading {
+  font-size: 5.6rem;
+  font-weight: 800;
+  line-height: 0.95;
+  color: #00001a;
+}
+
+.main-article-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5d5f79;
+  margin-bottom: 5.2rem;
+}
+
+.main-article-link:link,
+.main-article-link:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #f15e50;
+  padding: 1.5rem 3.2rem;
+  transition: background-color 0.2s;
+}
+
+.main-article-link:hover,
+.main-article-link:active {
+  background-color: #00001a;
+}
+
+.sidebar {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  background-color: #00001a;
+  padding: 2.8rem 2.4rem 0 2.4rem;
+}
+
+.sidebar-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #e9ab53;
+}
+
+.sidebar-article {
+  padding: 2.9rem 0;
+}
+
+.sidebar-article:nth-child(3) {
+  border-top: solid 1px #c5c6ce;
+  border-bottom: solid 1px #c5c6ce;
+}
+
+.sidebar-link-heading:link,
+.sidebar-link-heading:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.sidebar-link-heading:hover,
+.sidebar-link-heading:active {
+  color: #e9ab53;
+}
+
+.sidebar-art-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #c5c6ce;
+  padding-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.article-box {
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+.article-img-box img {
+  max-width: 10rem;
+}
+
+.text-box {
+  padding-left: 2.4rem;
+}
+
+.number {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #c5c6ce;
+  margin-bottom: 1rem;
+}
+
+.article-link-heading:link,
+.article-link-heading:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #00001a;
+  transition: color 0.2s;
+}
+
+.article-link-heading:hover,
+.article-link-heading:active {
+  color: #f15e50;
+}
+
+.article-subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #5d5f79;
+  margin-top: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
